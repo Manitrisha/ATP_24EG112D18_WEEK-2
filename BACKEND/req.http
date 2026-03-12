@@ -1,0 +1,34 @@
+
+### //product appilication
+
+### read all products
+GET http://localhost:4000/product-api/product
+
+### read products by productid
+GET http://localhost:4000/product-api/product/101
+
+###create new product
+POST http://localhost:4000/product-api/product
+Content-Type: application/json
+
+{
+    "productId":101,
+    "productName":"computer",
+    "price":40000,
+    "brand":"hp"
+}
+ 
+### update a product based id
+PUT http://localhost:4000/product-api/product/101
+Content-Type: application/json
+
+{
+    "productId":105,
+    "productName":"Tab",
+    "brand":"Hp",
+    "price":41000
+}
+
+### delete a product by id
+DELETE http://localhost:4000/product-api/product/101
+
